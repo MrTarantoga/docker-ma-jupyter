@@ -1,4 +1,4 @@
-ARG ROOT_CONTAINER=nvidia/cuda:11.7.1-cudnn8-runtime-ubuntu22.04
+ARG ROOT_CONTAINER=ubuntu:22.04
 
 FROM $ROOT_CONTAINER
 
