@@ -51,6 +51,7 @@ ENV INSTALL_PYTHON_PACKAGES="pip3 install notebook \
     scikit-learn \
     numpy \
     pandas \
+    geopandas \
     matplotlib \
     seaborn \
     statsmodels \
