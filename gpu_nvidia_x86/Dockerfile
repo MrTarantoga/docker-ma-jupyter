@@ -49,6 +49,7 @@ ENV INSTALL_PYTHON_PACKAGES="pip3 install notebook \
     ipywidgets \
     scipy \
     scikit-learn \
+    xgboost \
     numpy \
     pandas \
     geopandas \
