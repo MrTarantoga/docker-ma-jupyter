@@ -40,6 +40,26 @@ ENV NODEJS_BUILD_COMMAND="git clone --branch v18.9.0 --single-branch --depth 1 h
     cd .. && \
     rm -rf node"
 
+ENV MA_PYPI_PACKAGES="\
+    scipy \
+    scikit-learn \
+    xgboost \
+    numpy \
+    pandas \
+    geopandas \
+    seaborn \
+    statsmodels \
+    matplotlib \
+    Pillow \
+    pydot \
+    netCDF4 \
+    torch \
+    tensorboard \
+    xarray \
+    eccodes \
+    cfgrib \
+"
+
 ENV INSTALL_PYTHON_PACKAGES="pip3 install notebook \
     jupyterhub \
     jupyterlab \
@@ -47,20 +67,7 @@ ENV INSTALL_PYTHON_PACKAGES="pip3 install notebook \
     python-lsp-server[all] \
     tqdm \
     ipywidgets \
-    scipy \
-    scikit-learn \
-    xgboost \
-    numpy \
-    pandas \
-    geopandas \
-    matplotlib \
-    seaborn \
-    statsmodels \
-    Pillow \
-    pydot \
-    netCDF4 \
-    torch \
-    tensorboard \
+    ${MA_PYPI_PACKAGES} \
 "
 
 ENV CLEANUP_PYTHON_INSTALL="pip3 cache purge"
