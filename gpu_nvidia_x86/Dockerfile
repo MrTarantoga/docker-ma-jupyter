@@ -58,6 +58,7 @@ ENV MA_PYPI_PACKAGES="\
     xarray \
     eccodes \
     cfgrib \
+    wetterdienst[http,sql] \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install notebook \
