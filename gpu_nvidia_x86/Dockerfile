@@ -59,6 +59,7 @@ ENV MA_PYPI_PACKAGES="\
     eccodes \
     cfgrib \
     wetterdienst[http,sql] \
+    altair \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install notebook \
