@@ -16,7 +16,7 @@ USER root
 # Install all OS dependencies for notebook server that starts but lacks all
 # features (e.g., download as all possible file formats)
 ENV DEBIAN_FRONTEND noninteractive
-ENV PYTHON_DEPENDENCIES_RUN="openssl lzma libncurses5 tk uuid"
+ENV PYTHON_DEPENDENCIES_RUN="openssl lzma libncurses5 tk uuid libeccodes0"
 ENV PYTHON_DEPENDENCIES_BUILD="build-essential lcov pkg-config \
     libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev \
     libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
