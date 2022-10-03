@@ -46,6 +46,7 @@ ENV MA_PYPI_PACKAGES="\
     xgboost \
     numpy \
     pandas \
+    tables \
     geopandas \
     seaborn \
     statsmodels \
