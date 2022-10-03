@@ -54,7 +54,8 @@ ENV MA_PYPI_PACKAGES="\
     Pillow \
     pydot \
     netCDF4 \
-    torch \
+    tensorflow-gpu \
+    nengo-dl \
     tensorboard \
     xarray \
     eccodes \
