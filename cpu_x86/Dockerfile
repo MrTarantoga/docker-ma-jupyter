@@ -55,6 +55,7 @@ ENV MA_PYPI_PACKAGES="\
     pydot \
     netCDF4 \
     tensorflow==2.9.2 \
+    nengo \
     nengo-dl \
     tensorboard \
     xarray \
