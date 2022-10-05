@@ -64,7 +64,8 @@ ENV MA_PYPI_PACKAGES="\
     altair \
 "
 
-ENV INSTALL_PYTHON_PACKAGES="pip3 install notebook \
+ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
+    notebook \
     jupyterhub \
     jupyterlab \
     jupyterlab-lsp \
