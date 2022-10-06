@@ -53,6 +53,7 @@ ENV MA_PYPI_PACKAGES="\
     matplotlib \
     Pillow \
     pydot \
+    h5py \
     netCDF4 \
     tensorflow==2.9.2 \
     nengo \
