@@ -54,6 +54,7 @@ ENV MA_PYPI_PACKAGES="\
     Pillow \
     pydot \
     h5py \
+    hdf5plugin \
     netCDF4 \
     tensorflow-gpu==2.9.2 \
     nengo \
