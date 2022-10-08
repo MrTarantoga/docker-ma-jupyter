@@ -65,6 +65,7 @@ ENV MA_PYPI_PACKAGES="\
     cfgrib \
     wetterdienst[http,sql] \
     altair \
+    altair_saver \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
