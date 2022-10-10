@@ -74,6 +74,7 @@ ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
     jupyterhub \
     jupyterlab \
     jupyterlab-lsp \
+    vega \
     python-lsp-server[all] \
     jupyter-server-proxy \
     tqdm \
@@ -123,6 +124,7 @@ RUN apt-get update --yes && \
 # Activate extensions of jupyter
 RUN pip3 install jupyter_contrib_nbextensions && \
     jupyter contrib nbextension install --system && \
+    jupyter nbextension enable --py vega --sys-prefix && \
     jupyter nbextension enable codefolding/main --sys-prefix && \
     jupyter nbextension enable --py jupyter_server_proxy --sys-prefix && \
     jupyter nbextension enable --py widgetsnbextension --sys-prefix
