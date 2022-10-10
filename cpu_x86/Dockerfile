@@ -64,9 +64,6 @@ ENV MA_PYPI_PACKAGES="\
     eccodes \
     cfgrib \
     wetterdienst[http,sql] \
-    altair \
-    altair_saver \
-    altair_data_server \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
@@ -76,7 +73,6 @@ ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
     jupyterlab-lsp \
     vega \
     python-lsp-server[all] \
-    jupyter-server-proxy \
     tqdm \
     ipywidgets \
     ${MA_PYPI_PACKAGES} \
@@ -124,9 +120,7 @@ RUN apt-get update --yes && \
 # Activate extensions of jupyter
 RUN pip3 install jupyter_contrib_nbextensions && \
     jupyter contrib nbextension install --system && \
-    jupyter nbextension enable --py vega --sys-prefix && \
     jupyter nbextension enable codefolding/main --sys-prefix && \
-    jupyter nbextension enable --py jupyter_server_proxy --sys-prefix && \
     jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 # Configure environment
