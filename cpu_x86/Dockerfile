@@ -64,6 +64,7 @@ ENV MA_PYPI_PACKAGES="\
     eccodes \
     cfgrib \
     wetterdienst[http,sql] \
+    jenkspy \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
