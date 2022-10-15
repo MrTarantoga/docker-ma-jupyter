@@ -22,7 +22,7 @@ ENV PYTHON_DEPENDENCIES_BUILD="build-essential lcov pkg-config \
     libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
     lzma-dev tk-dev uuid-dev zlib1g-dev git"
 
-ENV PYTHON_BUILD_COMMAND="git clone --branch v3.10.7 --single-branch --depth 1 https://github.com/python/cpython.git && \
+ENV PYTHON_BUILD_COMMAND="git clone --branch v3.10.8 --single-branch --depth 1 https://github.com/python/cpython.git && \
     cd cpython && \
     ./configure --enable-optimizations && \
     make -j && \
