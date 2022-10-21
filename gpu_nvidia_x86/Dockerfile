@@ -32,7 +32,7 @@ ENV PYTHON_BUILD_COMMAND="git clone --branch v3.10.8 --single-branch --depth 1 h
     python3 -m ensurepip --upgrade && \
     pip3 install --upgrade pip"
 
-ENV NODEJS_BUILD_COMMAND="git clone --branch v18.9.0 --single-branch --depth 1 https://github.com/nodejs/node.git && \
+ENV NODEJS_BUILD_COMMAND="git clone --branch v19.0.0 --single-branch --depth 1 https://github.com/nodejs/node.git && \
     cd node && \
     ./configure && \
     make -j4 && \
