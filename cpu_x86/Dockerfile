@@ -44,6 +44,7 @@ ENV MA_PYPI_PACKAGES="\
     scipy \
     scikit-learn \
     xgboost \
+    lightgbm \
     numpy \
     pandas \
     dask[dataframe] \
