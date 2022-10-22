@@ -64,6 +64,7 @@ ENV MA_PYPI_PACKAGES="\
     cfgrib \
     wetterdienst[http,sql] \
     jenkspy \
+    joblib \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
