@@ -65,6 +65,7 @@ ENV MA_PYPI_PACKAGES="\
     cfgrib \
     wetterdienst[http,sql] \
     jenkspy \
+    bayesian-optimization \
     joblib \
 "
 
