@@ -40,6 +40,11 @@ ENV NODEJS_BUILD_COMMAND="git clone --branch v19.0.0 --single-branch --depth 1 h
     cd .. && \
     rm -rf node"
 
+ENV TENSORFLOW="\
+    tensorflow-gpu==2.9.2 \
+    tensorboard \
+"
+
 ENV MA_PYPI_PACKAGES="\
     scipy \
     scikit-learn \
@@ -58,14 +63,13 @@ ENV MA_PYPI_PACKAGES="\
     h5py \
     hdf5plugin \
     netCDF4 \
-    tensorflow-gpu==2.9.2 \
-    tensorboard \
     xarray \
     eccodes \
     cfgrib \
     jenkspy \
     bayesian-optimization \
     joblib \
+    ${TENSORFLOW} \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
