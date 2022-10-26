@@ -63,7 +63,6 @@ ENV MA_PYPI_PACKAGES="\
     xarray \
     eccodes \
     cfgrib \
-    wetterdienst[http,sql] \
     jenkspy \
     bayesian-optimization \
     joblib \
