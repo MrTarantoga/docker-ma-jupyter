@@ -69,7 +69,6 @@ ENV MA_PYPI_PACKAGES="\
     jenkspy \
     bayesian-optimization \
     joblib \
-    ${TENSORFLOW} \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
