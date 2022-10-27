@@ -51,6 +51,7 @@ ENV MA_PYPI_PACKAGES="\
     xgboost \
     lightgbm \
     numpy \
+    zstandard \
     pandas \
     dask[dataframe] \
     tables \
