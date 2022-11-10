@@ -70,6 +70,7 @@ ENV MA_PYPI_PACKAGES="\
     jenkspy \
     bayesian-optimization \
     joblib \
+    pymc \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
