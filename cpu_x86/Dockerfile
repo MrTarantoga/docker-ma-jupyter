@@ -45,7 +45,16 @@ ENV TENSORFLOW="\
     tensorboard \
 "
 
+ENV FORMER_PROJ_PACKAGES="\
+    tabulate \
+    plotly \
+    xarray \
+    eccodes \
+    cfgrib \
+"
+
 ENV MA_PYPI_PACKAGES="\
+    ${FORMER_PROJ_PACKAGES} \
     scipy \
     scikit-learn \
     xgboost \
@@ -64,9 +73,6 @@ ENV MA_PYPI_PACKAGES="\
     h5py \
     hdf5plugin \
     netCDF4 \
-    xarray \
-    eccodes \
-    cfgrib \
     jenkspy \
     bayesian-optimization \
     joblib \
