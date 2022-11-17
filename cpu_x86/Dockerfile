@@ -45,6 +45,11 @@ ENV TENSORFLOW="\
     tensorboard \
 "
 
+ENV PYTROCH="\
+    torch \
+    gpytroch \
+"
+
 ENV FORMER_PROJ_PACKAGES="\
     tabulate \
     plotly \
@@ -55,6 +60,7 @@ ENV FORMER_PROJ_PACKAGES="\
 
 ENV MA_PYPI_PACKAGES="\
     ${FORMER_PROJ_PACKAGES} \
+    ${PYTROCH} \
     scipy \
     scikit-learn \
     xgboost \
