@@ -16,11 +16,12 @@ USER root
 # Install all OS dependencies for notebook server that starts but lacks all
 # features (e.g., download as all possible file formats)
 ENV DEBIAN_FRONTEND noninteractive
-ENV PYTHON_DEPENDENCIES_RUN="openssl lzma libncurses5 tk uuid libeccodes0 libjpeg9"
+ENV PYTHON_DEPENDENCIES_RUN="openssl lzma libncurses5 tk uuid libeccodes0 \ 
+    libjpeg9 zlib1g libfreetype6 liblcms2-2 libwebp7"
 ENV PYTHON_DEPENDENCIES_BUILD="build-essential lcov pkg-config \
     libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev \
     libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
-    lzma-dev tk-dev uuid-dev zlib1g-dev git libjpeg9-dev"
+    lzma-dev tk-dev uuid-dev zlib1g-dev git libjpeg9-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev"
 
 ENV PYTHON_BUILD_COMMAND="git clone --branch v3.10.8 --single-branch --depth 1 https://github.com/python/cpython.git && \
     cd cpython && \
@@ -60,8 +61,6 @@ ENV FORMER_PROJ_PACKAGES="\
 "
 
 ENV MA_PYPI_PACKAGES="\
-    ${FORMER_PROJ_PACKAGES} \
-    ${PYTROCH} \
     scipy \
     scikit-learn \
     xgboost \
@@ -92,7 +91,8 @@ ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
     python-lsp-server[all] \
     tqdm \
     ipywidgets \
-    ${MA_PYPI_PACKAGES} \
+    ${MA_PYPI_PACKAGES} && \
+    pip3 install ${PYTROCH} \
 "
 
 ENV CLEANUP_PYTHON_INSTALL="pip3 cache purge"
