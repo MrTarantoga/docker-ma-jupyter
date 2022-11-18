@@ -48,6 +48,7 @@ ENV TENSORFLOW="\
 ENV PYTROCH="\
     torch \
     gpytorch \
+    pyro-ppl[extras] \
 "
 
 ENV FORMER_PROJ_PACKAGES="\

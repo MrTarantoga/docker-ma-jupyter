@@ -16,11 +16,11 @@ USER root
 # Install all OS dependencies for notebook server that starts but lacks all
 # features (e.g., download as all possible file formats)
 ENV DEBIAN_FRONTEND noninteractive
-ENV PYTHON_DEPENDENCIES_RUN="openssl lzma libncurses5 tk uuid libeccodes0"
+ENV PYTHON_DEPENDENCIES_RUN="openssl lzma libncurses5 tk uuid libeccodes0 libjpeg9"
 ENV PYTHON_DEPENDENCIES_BUILD="build-essential lcov pkg-config \
     libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev \
     libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
-    lzma-dev tk-dev uuid-dev zlib1g-dev git"
+    lzma-dev tk-dev uuid-dev zlib1g-dev git libjpeg9-dev"
 
 ENV PYTHON_BUILD_COMMAND="git clone --branch v3.10.8 --single-branch --depth 1 https://github.com/python/cpython.git && \
     cd cpython && \
@@ -48,6 +48,7 @@ ENV TENSORFLOW="\
 ENV PYTROCH="\
     torch \
     gpytorch \
+    pyro-ppl[extras] \
 "
 
 ENV FORMER_PROJ_PACKAGES="\
