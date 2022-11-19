@@ -49,7 +49,6 @@ ENV TENSORFLOW="\
 ENV PYTROCH="\
     torch \
     gpytorch \
-    pyro-ppl[extras] \
 "
 
 ENV FORMER_PROJ_PACKAGES="\
@@ -81,6 +80,7 @@ ENV MA_PYPI_PACKAGES="\
     jenkspy \
     bayesian-optimization \
     joblib \
+    ${PYTROCH} \
 "
 
 ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
