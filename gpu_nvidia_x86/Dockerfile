@@ -91,9 +91,10 @@ ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
     python-lsp-server[all] \
     tqdm \
     ipywidgets \
-    ${MA_PYPI_PACKAGES} && \
-    pip3 install ${PYTROCH} \
+    ${MA_PYPI_PACKAGES} \
 "
+#${MA_PYPI_PACKAGES} && \
+#pip3 install ${PYTROCH} \
 
 ENV CLEANUP_PYTHON_INSTALL="pip3 cache purge"
 
