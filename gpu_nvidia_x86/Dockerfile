@@ -64,8 +64,8 @@ ENV MA_PYPI_PACKAGES="\
     scikit-learn \
     xgboost \
     numpy \
-    zstandard \
     pandas \
+    zstandard \
     dask[dataframe] \
     tables \
     geopandas \
