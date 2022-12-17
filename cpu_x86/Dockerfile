@@ -88,7 +88,6 @@ ENV INSTALL_PYTHON_PACKAGES="pip3 install wheel \
     jupyterhub \
     jupyterlab \
     jupyterlab-lsp \
-    vega \
     python-lsp-server[all] \
     tqdm \
     ipywidgets \
