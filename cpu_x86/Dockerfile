@@ -49,6 +49,7 @@ ENV TENSORFLOW="\
 ENV PYTROCH="\
     torch \
     gpytorch \
+    faiss-cpu \
 "
 
 ENV FORMER_PROJ_PACKAGES="\
